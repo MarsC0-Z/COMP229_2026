@@ -1,4 +1,5 @@
 
+// Project content and matching CSS art classes are kept together for each card.
 const portfolioProjects = [
 	{
 		number: '01',

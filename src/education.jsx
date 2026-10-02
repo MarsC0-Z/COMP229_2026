@@ -1,4 +1,5 @@
 
+// Each entry supplies one education or qualification row on the timeline.
 const learningTimeline = [
 	{
 		period: '2026 · In progress',

@@ -183,6 +183,7 @@
   }
 }
 
+/* Shared navigation and footer. */
 .site-header {
   width: min(100% - 64px, 1200px);
   min-height: 84px;
@@ -288,6 +289,7 @@
   margin-inline: auto;
 }
 
+/* Home page introduction and supplied visual artwork. */
 .home-hero {
   min-height: 630px;
   display: grid;
@@ -502,6 +504,7 @@
   font-size: 14px;
 }
 
+/* Shared page heading rhythm and About layout. */
 .detail-page {
   min-height: calc(100svh - 84px);
   padding-top: 76px;
@@ -627,6 +630,7 @@
   font-size: 11px;
 }
 
+/* Project cards use data-driven art variants from project.jsx. */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -726,6 +730,7 @@
   font-size: 11px;
 }
 
+/* Education and qualification timeline. */
 .timeline {
   border-top: 1px solid var(--border);
 }
@@ -770,6 +775,7 @@
   font-weight: 600;
 }
 
+/* Services list and contact call-to-action. */
 .service-list {
   border-top: 1px solid var(--border);
 }
@@ -839,6 +845,7 @@
   font-size: 23px;
 }
 
+/* Contact details panel and responsive message form. */
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(250px, 0.75fr) 1.25fr;
@@ -981,11 +988,13 @@
   margin-top: -8px;
 }
 
+/* Brief entrance animation used when page content appears. */
 @keyframes rise-in {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Tablet navigation and two-column content adjustments. */
 @media (max-width: 900px) {
   .site-header {
     width: min(100% - 40px, 1200px);
@@ -1027,6 +1036,7 @@
   }
 }
 
+/* Stack page content and controls on narrow screens. */
 @media (max-width: 640px) {
   .site-header,
   .page-content {
@@ -1172,6 +1182,7 @@
   }
 }
 
+/* Turn off decorative motion when requested by the visitor's system settings. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

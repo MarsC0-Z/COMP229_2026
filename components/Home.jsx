@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import stackArtwork from '../src/assets/hero.png';
 
 export default function Home() {
+    // The contact form puts its confirmation data in the current route state.
     const { state } = useLocation();
     const submission = state?.contactSubmission;
 

@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom';
 
+// Keep menu labels and destinations together for consistent navigation.
 const navigationItems = [
 	{ label: 'Home', path: '/' },
 	{ label: 'About', path: '/about' },

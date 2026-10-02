@@ -1,5 +1,6 @@
 import profilePhoto from './assets/profile-photo.jpg';
 
+// Present the portfolio owner's profile, portrait, and downloadable resume.
 export default function About() {
 	return (
 		<main className="page-content detail-page">

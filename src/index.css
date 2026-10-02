@@ -1,3 +1,4 @@
+/* Starter theme tokens retained for the original demo styles. */
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -110,6 +111,7 @@ code {
   background: var(--code-bg);
 }
 
+/* Site-wide portfolio theme and baseline font settings. */
 :root {
   --text: #4b4c50;
   --text-h: #17191b;
@@ -129,6 +131,7 @@ code {
   letter-spacing: 0;
 }
 
+/* Shared browser defaults for predictable sizing and controls. */
 * {
   box-sizing: border-box;
 }

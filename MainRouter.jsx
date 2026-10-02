@@ -10,6 +10,7 @@ import Layout from './components/Layout'
 import Counter from './src/counter'
 
 
+// Keep each portfolio page and the shared shell reachable through one route table.
 const MainRouter = () => {
         return (<div>
                 <Layout/>

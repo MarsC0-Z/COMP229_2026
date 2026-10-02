@@ -6,9 +6,10 @@ export default function Contact() {
 
 	function handleSubmit(event) {
 		event.preventDefault();
+		// Read all named controls at once before routing the captured values to Home.
 		const formValues = Object.fromEntries(new FormData(event.currentTarget));
 
-		// Carry the captured form values to Home; this demo does not send email or store data.
+		// This demo confirms the message in the browser; it does not email or store it.
 		navigate('/', { state: { contactSubmission: formValues } });
 	}
 

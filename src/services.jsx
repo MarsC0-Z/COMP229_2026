@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 
+// Service entries are rendered as the rows in the Services page list.
 const serviceOffers = [
   { number: '01', name: 'Front-end development', detail: 'Responsive web pages built with semantic HTML, CSS, and modern JavaScript.', tag: 'WEB' },
   { number: '02', name: 'React interfaces', detail: 'Reusable components and approachable interactions for small web applications.', tag: 'REACT' },
