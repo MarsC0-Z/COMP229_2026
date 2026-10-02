@@ -1,0 +1,4 @@
+/* Spacing for text rendered from controlled input state. */
+.controlled__text {
+    margin-top: 20px;
+}
