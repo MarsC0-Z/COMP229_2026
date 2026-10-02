@@ -5,6 +5,7 @@ import About from './src/about'
 import Contact from './src/contact'
 import Education from './src/education'
 import Project from './src/project'
+import Services from './src/services'
 import Layout from './components/Layout'
 import Counter from './src/counter'
 
@@ -19,11 +20,16 @@ const MainRouter = () => {
                         <Route exact path="/education" element={<Education />} />
                         <Route exact path="/project" element={<Project />} />
                         <Route exact path="/contact" element={<Contact />} />
+                        <Route exact path="/services" element={<Services />} />
                         <Route exact path="/counter" element={<Counter />} />
 
 
                         
                 </Routes>
+        <footer className="site-footer">
+            <span>Portfolio · Web development</span>
+            <span>Built with curiosity <span aria-hidden="true">✳</span></span>
+        </footer>
         </div>
         )
 }

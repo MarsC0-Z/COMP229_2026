@@ -109,3 +109,61 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+
+:root {
+  --text: #4b4c50;
+  --text-h: #17191b;
+  --bg: #f7f7f3;
+  --border: #deded8;
+  --code-bg: #efefe9;
+  --accent: #7147d8;
+  --accent-bg: #eee9fb;
+  --accent-border: #b7a4ec;
+  --shadow: 0 16px 40px rgba(26, 23, 37, 0.12);
+  --sans: "Aptos", "Trebuchet MS", sans-serif;
+  --heading: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  color-scheme: light;
+  color: var(--text);
+  background: var(--bg);
+  font: 16px/1.65 var(--sans);
+  letter-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  background: var(--bg);
+}
+
+#root {
+  width: 100%;
+  max-width: none;
+  min-height: 100svh;
+  border: 0;
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  color: #fff;
+  background: #7147d8;
+}
