@@ -530,58 +530,48 @@
 
 .about-layout {
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) 1.2fr;
-  gap: clamp(36px, 7vw, 90px);
+  grid-template-columns: minmax(0, 0.68fr) minmax(0, 1.32fr);
+  gap: clamp(32px, 5vw, 64px);
   align-items: start;
   padding-top: 34px;
   border-top: 1px solid var(--border);
 }
 
 .portrait-placeholder {
-  min-height: 390px;
+  width: min(100%, 320px);
+  min-height: 0;
   position: relative;
+  justify-self: center;
+  margin: 0;
   display: grid;
   place-items: center;
   overflow: hidden;
-  background: #e9e5ed;
+  padding: 14px;
+  border: 1px solid #e2dfe6;
+  border-radius: 16px;
+  background: #eeebf1;
+  aspect-ratio: 4 / 5;
 }
 
-.portrait-shape {
-  width: 150px;
-  height: 210px;
-  position: relative;
-  margin-top: 50px;
-  border-radius: 70px 70px 26px 26px;
-  background: #927ca3;
-}
-
-.portrait-shape::before {
-  width: 94px;
-  height: 112px;
+.portrait-image {
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
   position: absolute;
-  top: -93px;
-  left: 28px;
-  border-radius: 50% 50% 46% 46%;
-  background: #d1b8a2;
-  content: "";
-}
-
-.portrait-shape::after {
-  width: 138px;
-  height: 50px;
-  position: absolute;
-  top: -111px;
-  left: 6px;
-  border-radius: 70% 70% 12% 12%;
-  background: #39313e;
-  content: "";
+  top: 14px;
+  left: 14px;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center 20%;
 }
 
 .portrait-caption {
   position: absolute;
   right: 14px;
   bottom: 12px;
-  color: #504a55;
+  padding: 5px 9px;
+  border-radius: 3px;
+  color: #fff;
+  background: rgba(23, 25, 27, 0.72);
   font-size: 10px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -1123,7 +1113,17 @@
   }
 
   .portrait-placeholder {
-    min-height: 320px;
+    width: min(100%, 280px);
+    padding: 11px;
+    border-radius: 14px;
+  }
+
+  .portrait-image {
+    width: calc(100% - 22px);
+    height: calc(100% - 22px);
+    top: 11px;
+    left: 11px;
+    border-radius: 9px;
   }
 
   .project-grid {

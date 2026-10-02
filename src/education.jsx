@@ -3,15 +3,10 @@ const learningTimeline = [
 	{
 		period: '2026 · In progress',
 		title: 'COMP229 coursework',
-		institution: 'Add your college or institution',
+		institution: 'Centennial College',
 		detail: 'Current studies and practical work in web application development.',
 	},
-	{
-		period: 'Add dates',
-		title: 'Add your degree or qualification',
-		institution: 'Add institution',
-		detail: 'Include completed qualifications, certificates, and professional training.',
-	},
+	
 ];
 
 export default function Education() {

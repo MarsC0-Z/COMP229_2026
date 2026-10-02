@@ -1,3 +1,5 @@
+import profilePhoto from './assets/profile-photo.jpg';
+
 export default function About() {
 	return (
 		<main className="page-content detail-page">
@@ -7,10 +9,10 @@ export default function About() {
 				<p className="page-intro">A growing practice built on curiosity, consistency, and care for the details.</p>
 			</div>
 			<section className="about-layout">
-				<div className="portrait-placeholder" role="img" aria-label="Placeholder for a head-and-shoulders portrait">
-					<div className="portrait-shape" />
-					<span className="portrait-caption">Add your headshot here</span>
-				</div>
+				<figure className="portrait-placeholder">
+					<img className="portrait-image" src={profilePhoto} alt="Portrait of Amaru Livermore" />
+					<figcaption className="portrait-caption">Amaru Livermore</figcaption>
+				</figure>
 				<div className="about-copy">
 					<p className="eyebrow">The person behind the work</p>
 					<h2 className="about-name">[Amaru Livermore]</h2>
@@ -21,7 +23,6 @@ export default function About() {
 						<div><span>Working style</span><strong>Curious, thoughtful, collaborative</strong></div>
 					</div>
 					<a className="button button-primary" href="/resume.pdf">View my resume <span aria-hidden="true">↗</span></a>
-					<p className="helper-note">Replace <code>[Your full legal name]</code> with your name, add your portrait, and place your resume PDF at <code>public/resume.pdf</code>.</p>
 				</div>
 			</section>
 		</main>
