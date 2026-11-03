@@ -1,0 +1,37 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import Home from './components/Home'
+import About from './src/about'
+import Contact from './src/contact'
+import Education from './src/education'
+import Project from './src/project'
+import Services from './src/services'
+import Layout from './components/Layout'
+import Counter from './src/counter'
+
+
+// Keep each portfolio page and the shared shell reachable through one route table.
+const MainRouter = () => {
+        return (<div>
+                <Layout/>
+                <Routes>
+                        
+                        <Route exact path="/" element={<Home />} />
+                        <Route exact path="/about" element={<About />} />
+                        <Route exact path="/education" element={<Education />} />
+                        <Route exact path="/project" element={<Project />} />
+                        <Route exact path="/contact" element={<Contact />} />
+                        <Route exact path="/services" element={<Services />} />
+                        <Route exact path="/counter" element={<Counter />} />
+
+
+                        
+                </Routes>
+        <footer className="site-footer">
+            <span>Portfolio · Web development</span>
+            <span>Built with curiosity <span aria-hidden="true">✳</span></span>
+        </footer>
+        </div>
+        )
+}
+export default MainRouter
